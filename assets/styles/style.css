@@ -304,8 +304,8 @@ header {
 }
 
 .single-item .slick-arrow::before {
-  font-family: "FontAwesome";
-  font-size: 25px;
+  font-family: "Font Awesome 5 pro";
+  font-size: 30px;
   color: black;
 }
 
@@ -453,7 +453,7 @@ header {
 }
 
 .multiple-items .slick-arrow::before {
-  font-family: "FontAwesome";
+  font-family: "Font Awesome 5 pro";
   font-size: 25px;
   color: black;
 }
