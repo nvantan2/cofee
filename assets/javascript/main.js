@@ -22,7 +22,7 @@ $(document).ready(function () {
   });
 
   $("#closeMenuRight").click(function () {
-    $(".menu-right").css("right", "-26%");
+    $(".menu-right").css("right", "-40%");
     $(".menu-right__backdrop").css("display", "none");
     $("header").css("left", 0);
     $("main").css("left", 0);
@@ -54,23 +54,25 @@ $(document).ready(function () {
   });
 
   $(".multiple-items").slick({
-    // rows: 2,
+    rows: 2,
     infinite: true,
     slidesToShow: 4,
-    slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+    slidesToScroll: 4,
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 576,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
