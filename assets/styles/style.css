@@ -6,7 +6,7 @@ html,
 * {
   box-sizing: border-box;
 }
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -66,6 +66,7 @@ header {
   z-index: 22;
   top: 0;
   left: 0;
+  background-color: #fff;
 }
 .menu {
   position: relative;
@@ -292,7 +293,6 @@ header {
 }
 
 /* Banner slider */
-
 .single-item .slick-prev {
   left: 25px;
   transition: 0.2s;
@@ -346,11 +346,62 @@ header {
   width: 12px;
 }
 
-.banner {
+.banner-slider {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  flex-direction: column;
+  margin: 80px -15px 40px;
+}
+
+@media screen and (min-width: 992px) {
+  .banner {
+    flex-direction: row;
+  }
+}
+
+.banner__item {
+  margin-bottom: 40px;
+  display: inline-block;
+  position: relative;
+  padding: 0 15px;
+  flex: 1;
+}
+
+.banner__item:hover .banner__read-more i {
+  transform: translateX(5px);
+  transition: 0.3s;
+}
+
+.banner__read-more i {
+  transform: translateX(0);
+  transition: 0.3s;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.banner__read-more {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: absolute;
+  top: auto;
+  bottom: 15%;
+  z-index: 2;
+  left: 10%;
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Title */
