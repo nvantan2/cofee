@@ -51,6 +51,14 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 3000,
     infinite: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   });
 
   $(".multiple-items").slick({
@@ -79,10 +87,13 @@ $(document).ready(function () {
   });
 
   $(".slider-news").slick({
-    // rows: 2,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    fade: true,
+    cssEase: "linear",
     responsive: [
       {
         breakpoint: 992,
