@@ -61,6 +61,18 @@ $(document).ready(function () {
     ],
   });
 
+  $(".product__rating").starRating({
+    totalStars: 5,
+    emptyColor: "#eae7de",
+    activeColor: "#c7a17a",
+    useGradient: false,
+    strokeColor: "#c7a17a",
+    strokeWidth: 0,
+    starSize: 14,
+    readOnly: true,
+    useFullStars: true,
+  });
+
   $(".multiple-items").slick({
     rows: 2,
     infinite: true,
@@ -92,8 +104,6 @@ $(document).ready(function () {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    fade: true,
-    cssEase: "linear",
     responsive: [
       {
         breakpoint: 992,

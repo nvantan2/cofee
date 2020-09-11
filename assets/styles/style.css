@@ -645,7 +645,7 @@ header {
 }
 
 .product__name {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .product__name > a {
@@ -661,6 +661,11 @@ header {
 .product__name > a:hover {
   color: #c7a17a;
   text-decoration: none;
+}
+
+.product__price-wrapper {
+  display: flex;
+  margin-top: 8px;
 }
 
 .product__price {
