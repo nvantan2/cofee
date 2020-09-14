@@ -254,6 +254,11 @@ header {
   border-top: 2px solid #c7a17a;
 }
 
+.menu-bar__cart-dropdown > ul {
+  max-height: 290px;
+  overflow-y: auto;
+}
+
 .menu-bar__cart:hover .menu-bar__cart-dropdown {
   visibility: visible;
   opacity: 1;
@@ -273,8 +278,9 @@ header {
   justify-content: space-between;
 }
 
-.menu-bar__cart-item {
-  padding-bottom: 17px;
+.menu-bar__cart-dropdown > ul .menu-bar__cart-item:not(:last-child) {
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 2px solid #efefef;
 }
 
@@ -330,6 +336,7 @@ header {
 .menu-bar__cart-total {
   margin: 0 0 21px 0;
   border-bottom: 2px solid #efefef;
+  border-top: 2px solid #efefef;
   padding: 10px 0;
   font-size: 14px;
   font-family: "Merriweather", serif;
