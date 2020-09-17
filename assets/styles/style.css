@@ -163,7 +163,8 @@ header {
   align-items: center;
 }
 
-.menu-bar > div,
+.menu-bar .menu-bar__icon-menu,
+.menu-bar .menu-bar__cart-dropdown,
 .menu-links {
   display: none;
 }
@@ -173,6 +174,10 @@ header {
   .menu-bar > div {
     display: flex;
     align-items: center;
+  }
+  .menu-bar .menu-bar__cart-dropdown,
+  .menu-bar .menu-bar__icon-menu {
+    display: block;
   }
 }
 
