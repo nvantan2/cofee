@@ -847,7 +847,47 @@ header {
 }
 
 .news-img {
-  height: 250px;
+  height: 160px;
+}
+@media screen and (min-width: 481px) {
+  .news-img {
+    height: 230px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .news-img {
+    height: 110px;
+  }
+}
+@media screen and (min-width: 601px) {
+  .news-img {
+    height: 170px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .news-img {
+    height: 220px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .news-img {
+    height: 140px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .news-img {
+    height: 180px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .news-img {
+    height: 210px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .news-img {
+    height: 250px;
+  }
 }
 
 .news-img a {
