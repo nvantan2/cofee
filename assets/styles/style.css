@@ -851,14 +851,16 @@ header {
 }
 
 /* News slider*/
-
+.slider-news {
+  padding-bottom: 25px;
+}
 .slider-news .slick-slide {
   border: none;
   outline: none;
 }
 
 .slider-news .slick-arrow {
-  top: -15px;
+  top: 100%;
 }
 
 .slider-news .slick-prev {
